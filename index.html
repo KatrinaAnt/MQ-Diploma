@@ -407,9 +407,9 @@
             <div class="products__cards">
               <div class="card">
                 <picture class="card__image">
-                  <source class="card__pic" media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg" alt="Розовая подушка с принтом">
-                  <source class="card__pic" media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg" alt="Розовая подушка с принтом">
-                  <source class="card__pic" media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg" alt="Розовая подушка с принтом">
+                  <source class="card__pic" media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+                  <source class="card__pic" media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+                  <source class="card__pic" media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
                   <img class="card__pic" src="images/shop-item-desk1.jpg" alt="Розовая подушка с принтом">
                 </picture>
                 <div class="features">
@@ -432,9 +432,9 @@
               </div>
               <div class="card">
                 <picture class="card__image">
-                  <source class="card__pic" media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg" alt="Игрушечный зайчик">
-                  <source class="card__pic" media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg" alt="Игрушечный зайчик">
-                  <source class="card__pic" media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg" alt="Игрушечный зайчик">
+                  <source class="card__pic" media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+                  <source class="card__pic" media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+                  <source class="card__pic" media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
                   <img class="card__pic" src="images/shop-item-desk2.jpg" alt="Игрушечный зайчик">
                 </picture>
                 <div class="features">
@@ -453,9 +453,9 @@
               </div>
               <div class="card">
                 <picture class="card__image">
-                  <source class="card__pic" media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg" alt="Шестиугольная деревянная рамка и ваза">
-                  <source class="card__pic" media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg" alt="Шестиугольная деревянная рамка и ваза">
-                  <source class="card__pic" media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg" alt="Шестиугольная деревянная рамка и ваза">
+                  <source class="card__pic" media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+                  <source class="card__pic" media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+                  <source class="card__pic" media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
                   <img class="card__pic" src="images/shop-item-desk3.jpg" alt="Шестиугольная деревянная рамка и ваза">
                 </picture>
                 <div class="features">
@@ -485,14 +485,14 @@
               <form class="popup__form" action="#0">
                 <label class="select__group group">
                   <span class="group__hint">Как часто вы заходите на сайт?</span>
-                  <select class="popup__dropdown group__field" name="visits" required>
+                  <select class="popup__dropdown group__field" size="1" name="visits" required>
                     <option class="dropdown__item" value="var1" selected>Почти каждый день</option>
                     <option class="dropdown__item" value="var2">Раз в несколько дней</option>
                     <option class="dropdown__item" value="var3">Раз в несколько недель</option>
                     <option class="dropdown__item" value="var4">Несколько раз в год</option>
                   </select>
                 </label>
-                <label class="radio__group group">
+                <div class="radio__group group">
                   <span class="group__hint">Вы подписаны на e-mail рассылку?</span>
                   <div class="radio__wrap">
                     <label class="radio__inner-yes">
@@ -504,9 +504,9 @@
                       <span class="radio__var group__hint">Нет</span>
                     </label>
                   </div>
-                </label>
+                </div>
+                <p class="group__hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
                 <label class="comment__group group">
-                  <p class="group__hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте</p>
                   <textarea class="comment__field group__field" name="comment" placeholder="Может, больше рецептов?" required></textarea>
                 </label>
                 <button class="group__btn btn__send">Отправить</button>
