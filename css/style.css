@@ -27,6 +27,10 @@ a {
     color: inherit;
   }
   
+.page {
+  margin: 0 auto;
+}
+
 .backing {
     background-image: url(../images/banner-bg.jpg);
     background-repeat: no-repeat;
@@ -113,7 +117,7 @@ a {
   }
  
   .preview {
-    margin-top: 63px;
+    margin-top: 53px;
 }
 
   .subtitle {
@@ -175,7 +179,7 @@ a {
 
 .row__post-info {
   box-sizing: border-box;
-  padding: 33px;
+  padding: 37px;
   border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
@@ -515,8 +519,8 @@ a {
   .products__cards {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0 64px;
-    padding: 0 24px;
+    margin: 26px 0 66px;
+    padding: 0 38px;
   }
 
   .card {
@@ -528,13 +532,13 @@ a {
   .features {
     flex-grow: 1;
     box-sizing: border-box;
-    margin: -30px -19px 0;
-    padding: 25px 19px;
+    margin: -35px -23px 0;
+    padding: 32px 19px;
     border: 3px solid #b59f5b;
   }
 
   .product__name {
-    margin: 26px 0 17px;
+    margin: 19px 0 5px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -575,8 +579,8 @@ a {
   }
 
   .btn__shop {
-    width: 138px;
-    height: 38px;
+    width: 140px;
+    height: 50px;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -728,7 +732,6 @@ a {
   }
 
   .footer {
-    margin-top: 23px;
     padding: 0 15px;
   }
   
@@ -774,8 +777,9 @@ a {
   @media (max-width: 1200px) {
     .menu__burger {
       display: block;
+      margin-top: -5px;
+      width: 24px;
       text-align: center;
-      width: 23px;
     }
 
     .menu {
@@ -784,6 +788,7 @@ a {
 
     .row {
       flex-wrap: wrap;
+      margin: 17px 0 0;
     }
 
     .post {
@@ -797,7 +802,7 @@ a {
     .post__info {
       width: 100%;
       margin-left: 0;
-      margin-top: 17px;
+      margin-top: 6px;
     }
 
     .products__cards {
@@ -815,22 +820,33 @@ a {
     }
   }
 
-  @media (min-width: 641px) and (max-width: 1200px) {
+  @media (min-width: 641px) and (max-width: 1199px) {
     .backing {
       background-image: url(../images/banner-bg-tablet.jpg);
       background-position: center;
+    }
+
+    .header {
+      min-height: 0;
+      padding: 45px 35px 108px;
     }
 
     .logo {
       width: 158px;
     }
 
+    .title {
+      width: 620px;
+      margin: 80px auto 0;
+    }
+
     .heading {
       font-size: 40px;
+      line-height: 1.5;
     }
 
     .preview {
-      margin-top: 50px;
+      margin-top: 42px;
   }
 
     .main__title {
@@ -842,12 +858,18 @@ a {
       height: 246px;
     }
 
+    .row__post-info {
+      padding: 31px;
+    }
+
     .post__caption {
       font-size: 17px;
+      margin-bottom: 32px;
     }
 
     .page__main {
       gap: 34px;
+      padding: 0 34px;
     }
 
     .post {
@@ -855,8 +877,16 @@ a {
     }
 
     .post__first {
-      margin-top: 61px;
+      margin-top: 51px;
     }
+
+    .tags {
+      margin-left: 19px;
+    }
+
+    .post__meta {
+      margin-bottom: 27px;
+  }
 
     .post:not(:last-child):after {
       content: "";
@@ -866,12 +896,31 @@ a {
       border-bottom: 3px solid #eeeeee;
     }
 
+    .sidebar {
+      margin-top: 47px;
+    }
+
     .products {
-      margin-top: 32px;
+      margin-top: 14px;
     }
 
     .products__cards {
-      gap: 35px;
+      gap: 32px;
+      margin: 26px 0 57px;
+      padding: 0 55px;
+    }
+
+    .features {
+      margin: -37px -20px 0;
+      padding: 21px 20px;
+    }
+
+    .product__name {
+      margin: 26px 0 5px;
+    }
+
+    .product__description {
+      margin-bottom: 20px;
     }
 
     .popup__close {
@@ -883,6 +932,17 @@ a {
       width: 26px;
       height: 26px;
       background-size: 26px;
+    }
+
+    .copy {
+      margin-top: 43px;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+    .row__post {
+      width: calc((100% - (4px*3))/4);
+      height: 320px;
     }
   }
 
@@ -1030,5 +1090,11 @@ a {
 
     .copy {
       margin: 52px 0 50px;
+    }
+  }
+
+  @media (max-width: 640px) and (orientation: landscape) {
+    .row__post {
+      width: calc((100% - 4px)/2);
     }
   }
