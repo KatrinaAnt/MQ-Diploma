@@ -788,7 +788,6 @@ a {
 
     .row {
       flex-wrap: wrap;
-      margin: 17px 0 0;
     }
 
     .post {
@@ -858,6 +857,10 @@ a {
 
     .main__title {
       font-size: 18px;
+    }
+
+    .row {
+      margin: 17px 0 0;
     }
 
     .row__post {
@@ -931,7 +934,7 @@ a {
     }
 
     .popup__close {
-      top: -30px;
+      top: -35px;
       left: 364px; 
     }
     
@@ -940,6 +943,14 @@ a {
       height: 26px;
       background-size: 26px;
     }
+
+    .radio__wrap {
+      margin-top: 9px;
+    }
+
+    .radio__inner-yes {
+      margin-right: 30px;
+  }
 
     .copy {
       margin-top: 43px;
@@ -959,7 +970,7 @@ a {
     }
 
     .header {
-      padding: 30px 15px 219px 17px;
+      padding: 34px 15px 210px 17px;
     }
 
     .menu__bar {
@@ -975,7 +986,7 @@ a {
 
     .logo {
       width: 269px;
-      margin-top: 174px;
+      margin-top: 172px;
     }
   
     .menu__burger {
@@ -984,17 +995,29 @@ a {
 
     .title {
       max-width: 710px;  
-      margin: 44px auto 0;
+      margin: 30px auto 0;
     }
 
     .heading {
       font-size: 26px;
-
+      line-height: 1.4;
     }
+
+    .preview {
+      margin-top: 39px;
+  }
 
     .subtitle {
       font-size: 16px;
     }
+
+    .subtitle::after {
+      margin: 8px auto 0;
+    }
+
+    .row {
+      margin: 25px 0 0;
+  }
 
     .row__post {
       width: 100%;
@@ -1002,49 +1025,81 @@ a {
     }
 
     .row__post-info {
-      padding: 33px 23px;
-    }
+      padding: 29px 23px 27px 14px;
+  }
 
     .post__caption {
       font-size: 16px;
+      margin-bottom: 19px;
     }
 
     .page__main {
       display: block;
     }
-
-    .post:not(:last-child) {
-      margin: 0 0 34px;
+    .articles {
+    margin-top: 43px;
     }
 
-    .post__first {
-      margin-top: 45px;
+    .post {
+      margin: 0 0 34px;
     }
 
     .post:after {
       content: "";
       display: block;
       width: 100%;
-      margin-top: 23px;
+      margin-top: 22px;
       border-bottom: 3px solid #eeeeee;
     }
 
     .post__meta {
-      margin-bottom: 25px;
+      margin-bottom: 14px;
     }
 
     .post__description {
       font-size: 14px;
+      line-height: 1.4;
     }
 
     .sidebar {
       width: 100%;
-      margin-top: 44px;
+      margin-top: 0;
     }
 
-    .search, .subscription, .link, .topic {
+    .new__posts {
+      margin-bottom: 62px;
+  }
+
+    .search {
       margin-bottom: 45px;
     }
+
+    .subscription {
+      margin-bottom: 41px;
+    }
+
+    .link {
+      margin-bottom: 26px;
+    }
+
+    .link__tags {
+      margin-top: 29px;
+    }
+
+    .wrap {
+      height: 28px;
+      margin-right: 4px;
+      margin-bottom: 10px;
+      padding: 0 14px;
+    }
+
+    .topic__list {
+      margin-top: 26px;
+    }
+
+    .topic__item {
+      margin-bottom: 13px;
+  }
 
     .form__search {
       width: 100%;
@@ -1064,13 +1119,17 @@ a {
 
     .products__cards {
       justify-content: center;
-      gap: 26px;
+      gap: 23px;
       margin: 30px 0 0;
+    }
+
+    .card__footer-sale {
+      align-items: center;
     }
 
     .popup__window {
       width: 331px;
-      padding: 30px 25px;
+      padding: 25px 25px 30px;
     }
 
     .popup__close {
@@ -1084,12 +1143,24 @@ a {
       background-size: 28px;
     }
 
+    .popup__dropdown {
+      margin: 9px 0 30px;
+    }
+
+    .radio__wrap {
+      margin-top: 9px;
+    }
+
+    .radio__inner-yes {
+      margin-right: 30px;
+  }
+
     .footer {
-      margin-top: 43px;
+      margin-top: 38px;
     }
 
     .copy {
-      margin: 52px 0 50px;
+      margin: 43px 0 50px;
     }
   }
 
