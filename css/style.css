@@ -154,7 +154,7 @@ a {
   align-items: end;
   padding: 0 20px 15px;
   width: 25%;
-  height: 320px;
+  min-height: 320px;
   box-sizing: border-box;
   z-index: 0;
   background-repeat: no-repeat;
@@ -826,7 +826,7 @@ a {
     }
   }
 
-  @media (min-width: 641px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1200px) {
     .backing {
       background-image: url(../images/banner-bg-tablet.jpg);
       background-position: center;
@@ -911,13 +911,19 @@ a {
     }
 
     .products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-top: 14px;
     }
 
     .products__cards {
-      gap: 32px;
+      max-width: 698px;
       margin: 26px 0 50px;
-      padding: 0 55px;
+    }
+
+    .card:nth-child(odd) {
+      margin-right: 68px;
     }
 
     .features {
