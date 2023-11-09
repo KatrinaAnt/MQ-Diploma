@@ -519,6 +519,7 @@ a {
   .products__cards {
     display: flex;
     justify-content: space-between;
+    gap: 28px;
     margin: 26px 0 66px;
     padding: 0 38px;
   }
@@ -526,7 +527,7 @@ a {
   .card {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    width: calc(33.33% - 28px);
   }
   
   .features {
@@ -920,6 +921,11 @@ a {
     .products__cards {
       max-width: 698px;
       margin: 26px 0 50px;
+      gap: 28px;
+    }
+
+    .card {
+      width: calc(50% - (68px + 28px))
     }
 
     .card:nth-child(odd) {
@@ -960,12 +966,6 @@ a {
 
     .copy {
       margin-top: 43px;
-    }
-  }
-
-  @media (max-width: 683px) and (min-width: 641px) {
-    .products__cards {
-      justify-content: center;
     }
   }
 
@@ -1127,6 +1127,10 @@ a {
       justify-content: center;
       gap: 23px;
       margin: 30px 0 0;
+    }
+
+    .card {
+      width: 100%;
     }
 
     .card__footer-sale {
