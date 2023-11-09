@@ -530,6 +530,11 @@ a {
     width: calc(33.33% - 28px);
   }
   
+  .card__image {
+    height: 48.5%;
+    width: 100%;
+  }
+
   .features {
     flex-grow: 1;
     box-sizing: border-box;
@@ -925,7 +930,13 @@ a {
     }
 
     .card {
-      width: calc(50% - (68px + 28px))
+      width: calc((100% - 91px)/2);
+    }
+
+    .card__pic {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
 
     .card:nth-child(odd) {
