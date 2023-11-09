@@ -519,7 +519,7 @@ a {
   .products__cards {
     display: flex;
     justify-content: space-between;
-    gap: 28px;
+    gap: 62px;
     margin: 26px 0 66px;
     padding: 0 38px;
   }
@@ -527,11 +527,12 @@ a {
   .card {
     display: flex;
     flex-direction: column;
-    width: calc(33.33% - 28px);
+    width: calc(33.33% - 62px);
   }
-  
-  .card__image {
-    height: 48.5%;
+
+  .card__pic {
+    object-fit: cover;
+    height: 100%;
     width: 100%;
   }
 
@@ -931,12 +932,6 @@ a {
 
     .card {
       width: calc((100% - 91px)/2);
-    }
-
-    .card__pic {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
     }
 
     .card:nth-child(odd) {
