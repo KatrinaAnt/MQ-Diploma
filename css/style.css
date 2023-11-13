@@ -152,7 +152,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: end;
-  padding: 0 20px 15px;
+  padding:15px 20px;
   width: 25%;
   min-height: 320px;
   box-sizing: border-box;
@@ -918,18 +918,18 @@ a {
     }
 
     .products__cards {
-      max-width: 698px;
       margin: 26px 0 50px;
+      padding: 0 58px;
       gap: 28px;
     }
 
     .card {
-      width: calc((100% - 91px)/2);
+      width: calc((100% - 80px)/2);
     }
 
     .features {
       margin: -37px -20px 0;
-      padding: 21px 20px 30px;
+      padding: 26px 20px 30px;
     }
 
     .product__name {
@@ -938,6 +938,10 @@ a {
 
     .product__description {
       margin-bottom: 20px;
+    }
+
+    .card__footer {
+      align-items: end;
     }
 
     .popup__close {
